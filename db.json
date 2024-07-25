@@ -1,0 +1,88 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "How to make Flyer Design",
+      "text": "Lorem ipsum dolor sit amet, consec adipiscing elit awd and lorem ipsum...",
+      "image": "1.png",
+      "tech": ["Typescript", "ReactJs", "NextJs", "CSS", "HTML", "MongoDB"]
+    },
+    {
+      "id": 2,
+      "title": "How to make Flyer Design",
+      "text": "Lorem ipsum dolor sit amet, consec adipiscing elit awd and lorem ipsum...",
+      "image": "2.png",
+      "tech": ["Typescript", "ReactJs", "NextJs", "CSS"]
+    },
+    {
+      "id": 3,
+      "title": "How to make Flyer Design",
+      "text": "Lorem ipsum dolor sit amet, consec adipiscing elit awd and lorem ipsum...",
+      "image": "3.png",
+      "tech": ["Typescript", "ReactJs", "NextJs", "CSS", "HTML", "MongoDB"]
+    },
+    {
+      "id": 4,
+      "title": "How to make Flyer Design",
+      "text": "Lorem ipsum dolor sit amet, consec adipiscing elit awd and lorem ipsum...",
+      "image": "4.png",
+      "tech": ["Typescript", "ReactJs", "NextJs", "CSS", "HTML", "MongoDB"]
+    },
+    {
+      "id": 5,
+      "title": "How to make Flyer Design",
+      "text": "Lorem ipsum dolor sit amet, consec adipiscing elit awd and lorem ipsum...",
+      "image": "5.png",
+      "tech": ["Typescript", "ReactJs", "NextJs", "CSS", "HTML", "MongoDB"]
+    },
+    {
+      "id": 6,
+      "title": "How to make Flyer Design",
+      "text": "Lorem ipsum dolor sit amet, consec adipiscing elit awd and lorem ipsum...",
+      "image": "6.png",
+      "tech": ["Typescript", "ReactJs", "NextJs", "CSS", "HTML", "MongoDB"]
+    }
+  ],
+  "recommendations": [
+    {
+      "id": 1,
+      "title": "Great Quality!",
+      "name": "James Gouse",
+      "desg": "Photographer",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. Morbi donec amet....",
+      "image": "1.png"
+    },
+    {
+      "id": 2,
+      "title": "Amazing work!",
+      "name": "Tiana Philips",
+      "desg": "Graphic Designer",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. Morbi donec amet....",
+      "image": "2.png"
+    },
+    {
+      "id": 3,
+      "title": "Great Quality!",
+      "name": "Talan Westervelt",
+      "desg": "Business Man",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. Morbi donec amet....",
+      "image": "3.png"
+    },
+    {
+      "id": 4,
+      "title": "Amazing work!",
+      "name": "James Gouse",
+      "desg": "Photographer",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. Morbi donec amet....",
+      "image": "1.png"
+    },
+    {
+      "id": 5,
+      "title": "Great Quality!",
+      "name": "Tiana Philips",
+      "desg": "Graphic Designer",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. Morbi donec amet....",
+      "image": "2.png"
+    }
+  ]
+}
