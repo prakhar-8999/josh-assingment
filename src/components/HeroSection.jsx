@@ -19,8 +19,10 @@ const HeroSection = () => {
               <img src={greenEllipse} alt="ellipse" />
             </div>
             <div>
-              <p className="text-6xl font-bold">I'm Rayan Adlrdard</p>
-              <p className="text-6xl font-bold ">
+              <p className="text-2xl sm:text-6xl font-bold flex-wrap">
+                I'm Rayan Adlrdard
+              </p>
+              <p className="font-bold text-2xl sm:text-6xl">
                 <span className="text-secondary">Front-end</span> Developer
               </p>
               <p className="mt-16 w-[600px] font-normal text-slate-500">

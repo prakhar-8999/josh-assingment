@@ -84,5 +84,115 @@
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. Morbi donec amet....",
       "image": "2.png"
     }
+  ],
+  "skills": [
+    {
+      "id": 1,
+      "title": "Front End Development",
+      "tech": [
+        {
+          "techName": "Html",
+          "percent": "90"
+        },
+        {
+          "techName": "CSS",
+          "percent": "85"
+        },
+        {
+          "techName": "Js",
+          "percent": "80"
+        },
+        {
+          "techName": "PHP",
+          "percent": "75"
+        },
+        {
+          "techName": "WordPress",
+          "percent": "85"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Languages",
+      "tech": [
+        {
+          "techName": "Hindi",
+          "percent": "90"
+        },
+        {
+          "techName": "English",
+          "percent": "85"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Back End Development",
+      "tech": [
+        {
+          "techName": "NodeJS",
+          "percent": "90"
+        },
+        {
+          "techName": "SSR",
+          "percent": "85"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Front End Development",
+      "tech": [
+        {
+          "techName": "Html",
+          "percent": "90"
+        },
+        {
+          "techName": "CSS",
+          "percent": "85"
+        },
+        {
+          "techName": "Js",
+          "percent": "80"
+        },
+        {
+          "techName": "PHP",
+          "percent": "75"
+        },
+        {
+          "techName": "WordPress",
+          "percent": "85"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Languages",
+      "tech": [
+        {
+          "techName": "Hindi",
+          "percent": "90"
+        },
+        {
+          "techName": "English",
+          "percent": "85"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Back End Development",
+      "tech": [
+        {
+          "techName": "NodeJS",
+          "percent": "90"
+        },
+        {
+          "techName": "SSR",
+          "percent": "85"
+        }
+      ]
+    }
   ]
 }

@@ -1,7 +1,7 @@
 const ProjectCard = (props) => {
   return (
     <>
-      <div className="flex flex-col bg-white border shadow-sm rounded-3xl ">
+      <div className="flex flex-col bg-white border shadow-sm rounded-3xl h-full">
         <img
           className="w-full h-auto rounded-t-xl"
           src={`/projects/${props.image}`}

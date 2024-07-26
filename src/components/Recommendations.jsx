@@ -42,8 +42,8 @@ const Recommendations = () => {
           modules={[FreeMode, Pagination]}
           className="mySwiper"
         >
-          {recommendations.map((each) => (
-            <SwiperSlide>
+          {recommendations.map((each, index) => (
+            <SwiperSlide key={index}>
               <RecommendationsCard {...each} />
             </SwiperSlide>
           ))}

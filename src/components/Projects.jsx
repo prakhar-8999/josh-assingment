@@ -29,10 +29,12 @@ const Projects = () => {
         </p>
       </div>
 
-      <div className="mt-8 mx-48">
+      <div className="mt-8 mx-6 sm:mx-48">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-10">
-          {projects.map((each) => (
-            <ProjectCard {...each} />
+          {projects.map((each, index) => (
+            <div key={index}>
+              <ProjectCard {...each} />
+            </div>
           ))}
         </div>
       </div>
