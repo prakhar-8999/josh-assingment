@@ -18,14 +18,14 @@ const HeroSection = () => {
             <div className="absolute bottom-16 left-40">
               <img src={greenEllipse} alt="ellipse" />
             </div>
-            <div>
-              <p className="text-2xl sm:text-6xl font-bold flex-wrap">
+            <div className="ml-10 sm:ml-0 -mt-60 sm:-mt-0">
+              <p className="text-3xl sm:text-6xl font-bold flex-wrap">
                 I'm Rayan Adlrdard
               </p>
-              <p className="font-bold text-2xl sm:text-6xl">
+              <p className="font-bold text-3xl sm:text-6xl">
                 <span className="text-secondary">Front-end</span> Developer
               </p>
-              <p className="mt-16 w-[600px] font-normal text-slate-500">
+              <p className="mt-16 w-full sm:w-[600px] font-normal text-slate-500">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et,
                 volutpat feugiat placerat lobortis. Natoque rutrum semper sed
                 suspendisse nunc lectus.
@@ -40,7 +40,7 @@ const HeroSection = () => {
               </button>
             </div>
           </div>
-          <div className="relative">
+          <div className="relative mt-12 sm:mt-0">
             <div className="absolute top-[32%] right-[25%]">
               <img src={rectangle} alt="rectangle" />
             </div>

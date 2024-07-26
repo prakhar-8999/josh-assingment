@@ -2,8 +2,8 @@ import star from "../assets/star.png";
 const RecommendationsCard = (props) => {
   return (
     <>
-      <div className="flex flex-col bg-white border shadow-sm rounded-xl p-4 md:p-5">
-        <div className="flex items-center gap-x-5">
+      <div className="!w-96 bg-white border shadow-sm rounded-xl p-4 md:p-5">
+        <div className="flex flex-wrap items-center gap-x-5">
           {Array.from({length: 5}, (_, i) => i).map((_, index) => (
             <img src={star} alt="star" className="!h-7 !w-7" key={index} />
           ))}

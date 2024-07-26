@@ -24,3 +24,9 @@
   height: 100%;
   object-fit: cover;
 }
+
+.swiper-pagination {
+  bottom: -6px !important;
+  margin-top: 30px !important;
+  position: relative !important;
+}

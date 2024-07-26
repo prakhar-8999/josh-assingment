@@ -8,7 +8,6 @@ const Projects = () => {
     instance
       .get("projects")
       .then((res) => {
-        console.log(res.data);
         setProjects(res.data);
       })
       .catch((err) => console.log(err));

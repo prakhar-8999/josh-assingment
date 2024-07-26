@@ -4,7 +4,7 @@ import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import {FreeMode, Pagination} from "swiper/modules";
+import {Pagination} from "swiper/modules";
 import instance from "../../axios";
 import RecommendationsCard from "./RecommendationCard";
 
@@ -19,7 +19,7 @@ const Recommendations = () => {
   }, []);
   return (
     <>
-      <div className="flex justify-center mt-12 font-semibold text-5xl">
+      <div className="flex justify-center mt-12 font-semibold text-3xl sm:text-5xl">
         Recommendations
       </div>
       <div className="mt-6">
@@ -31,19 +31,37 @@ const Recommendations = () => {
         </p>
       </div>
 
-      <div className="mt-12">
+      <div className="mt-12 overflow-auto h-full">
         <Swiper
-          slidesPerView={3}
+          slidesPerView={1}
           spaceBetween={30}
+          style={{
+            "--swiper-navigation-color": "#FFB400",
+            "--swiper-pagination-color": "#FFB400",
+          }}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 50,
+            },
+          }}
           freeMode={true}
           pagination={{
             clickable: true,
           }}
-          modules={[FreeMode, Pagination]}
+          modules={[Pagination]}
           className="mySwiper"
         >
           {recommendations.map((each, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide key={index} className="w-96">
               <RecommendationsCard {...each} />
             </SwiperSlide>
           ))}

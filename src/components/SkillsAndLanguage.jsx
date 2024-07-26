@@ -18,7 +18,6 @@ const SkillsAndLanguage = () => {
   };
 
   const onFinish = (values) => {
-    console.log(values);
     const postData = {
       title: values.domain,
       id: skills.length + 1,
@@ -27,13 +26,15 @@ const SkillsAndLanguage = () => {
           techName: values[`skill${index}`],
           percent: values[`prof${index}`],
         }))
-        .filter((e) => e.techName !== undefined && e.techName !== ""),
+        .filter((e) => e.techName !== undefined && e.techName?.trim() !== ""),
     };
-    console.log(postData);
+    if (postData.tech.length === 0) {
+      message.error("Atleast 1 Skill is required!");
+      return;
+    }
     instance
       .post("skills", postData)
       .then((res) => {
-        console.log(res);
         message.success("Skill Inserted Successfully!");
         form.resetFields();
         getSkills();
@@ -48,7 +49,7 @@ const SkillsAndLanguage = () => {
   return (
     <>
       <div className="mt-36">
-        <p className="text-center text-5xl pt-12 font-bold">
+        <p className="text-center text-3xl sm:text-5xl pt-12 font-bold">
           Skills & Langauges
         </p>
         <div className="text-gray-500">
@@ -112,17 +113,7 @@ const SkillsAndLanguage = () => {
             <div className="w-[80%]">
               <p className="ml-1 text-lg mb-2">Skills</p>
               {skillsArray.map((_, index) => (
-                <Form.Item
-                  name={`skill${index}`}
-                  key={index}
-                  className="mb-5"
-                  rules={[
-                    {
-                      required: index === 0,
-                      message: "At least 1 skill is required!",
-                    },
-                  ]}
-                >
+                <Form.Item name={`skill${index}`} key={index} className="mb-5">
                   <Input
                     type="text"
                     className="block border-none border-0 w-full p-5 text-gray-900 rounded-lg !bg-gray-200 hover:!bg-gray-200 text-base"
@@ -137,12 +128,6 @@ const SkillsAndLanguage = () => {
                   name={`prof${index}`}
                   key={index}
                   className="mb-[19px]"
-                  rules={[
-                    {
-                      required: index === 0,
-                      message: "Enter Proficiency",
-                    },
-                  ]}
                 >
                   <InputNumber
                     type="text"

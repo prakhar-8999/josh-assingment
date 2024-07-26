@@ -12,7 +12,7 @@ const SkillsCard = (props) => {
             <div className="w-full bg-gray-200 rounded-full h-2.5 mt-2">
               <div
                 className="bg-secondary h-2.5 rounded-full"
-                style={{width: `${each.percent}%`}}
+                style={{width: `${each?.percent ? each?.percent : 0}%`}}
               ></div>
             </div>
           </div>
