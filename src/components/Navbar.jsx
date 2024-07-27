@@ -36,7 +36,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="hidden sm:flex lg:gap-x-3 items-center">
+        <div className="hidden -ml-24 sm:flex lg:gap-x-3 items-center">
           {navItems.map((each, index) => (
             <button
               key={index}
